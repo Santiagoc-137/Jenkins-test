@@ -12,7 +12,16 @@ public class GestionApplication {
       SpringApplication.run(GestionApplication.class, args);
     }
     @GetMapping("/hello")
-    public String hello(@RequestParam(value = "name", defaultValue = "World") String name) { 
-      return String.format("Hello Soy Santiago Medina Varon Entuciasta de la Ciberseguridad. \n y esto es una prueba de Jenkins. ");
-    }
+    public org.springframework.http.ResponseEntity<String> hello(
+      @RequestParam(value = "name", defaultValue = "World") String name) {
+      
+      String message = "Hello Soy Santiago Medina Varon Entusiasta de la Ciberseguridad.\n" +
+                      "Y esto es una prueba de Jenkins.\n" +
+                      "¡Todo funciona correctamente!";
+      
+      return org.springframework.http.ResponseEntity
+              .ok()
+              .header("Content-Type", "text/plain")
+              .body(message);
+  }
 }
