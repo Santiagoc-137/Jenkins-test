@@ -17,7 +17,7 @@ public class GestionApplication {
       
       String message = "Hello Soy Santiago Medina Varon Entusiasta de la Ciberseguridad.\n" +
                       "Y esto es una prueba de Jenkins.\n" +
-                      "¡Todo funciona correctamente!";
+                      "Todo funciona correctamente!";
       
       return org.springframework.http.ResponseEntity
               .ok()
