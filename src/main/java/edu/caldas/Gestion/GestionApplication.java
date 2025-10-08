@@ -13,6 +13,6 @@ public class GestionApplication {
     }
     @GetMapping("/hello")
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-      return String.format("Hello %s!", name,"Soy Santiago Medina Varon Entuciasta de la Cibersegiridad. 1 2 3 4 5 6 7 8");
+      return String.format("Hello Soy Santiago Medina Varon Entuciasta de la Ciberseguridad. 1 2 3 4 5 6 7 8");
     }
 }
