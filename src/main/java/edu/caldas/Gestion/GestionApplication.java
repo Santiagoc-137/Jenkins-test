@@ -15,7 +15,7 @@ public class GestionApplication {
     public org.springframework.http.ResponseEntity<String> hello(
       @RequestParam(value = "name", defaultValue = "World") String name) {
       
-      String message = "Hello Soy Santiago Medina Varon Entusiasta de la Ciberseguridad.\n" +
+      String message = "Hello, Soy Santiago Medina Varon Entusiasta de la Ciberseguridad.\n" +
                       "Y esto es una prueba de Jenkins.\n" +
                       "Todo funciona correctamente!";
       
