@@ -13,7 +13,6 @@ public class GestionApplication {
     }
     @GetMapping("/hello")
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) { 
-      return String.format("Hello Soy Santiago Medina Varon Entuciasta de la Ciberseguridad. \n 
-      y esto es unaprueba de Jenkins. ");
+      return String.format("Hello Soy Santiago Medina Varon Entuciasta de la Ciberseguridad. \n y esto es unaprueba de Jenkins. ");
     }
 }
